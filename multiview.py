@@ -152,8 +152,8 @@ class multiview():
 
                 """NORMALIZE U AND V"""
                 #print(inv(self.Q[v]), self.Q[v])
-                self.U[v]      = self.U[v].dot(inv(self.Q[v]))
-                self.V[v]      = self.V[v].dot(self.Q[v])
+                #self.U[v]      = self.U[v].dot(inv(self.Q[v]))
+                #self.V[v]      = self.V[v].dot(self.Q[v])
 
 
                 """UPDATE V"""
@@ -232,7 +232,7 @@ class multiview():
 
         if (regularisation_coefficients is None):
             #self.lambda_v      = np.array([3,2,2])
-            self.lambda_v      = np.array([0.5, 0.5, 0.5])
+            self.lambda_v      = np.array([0.1, 0.1, 0.1])
             self.lambda_f      = 0.1
             self.lambda_star_f = 0.1
             self.lambda_W      = 0.1
