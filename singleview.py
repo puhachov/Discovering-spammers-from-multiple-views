@@ -27,7 +27,7 @@ class singleview():
 		print("Precision: {}\n".format(precision))
 		print("Recall: {}\n".format(recall))
 		print("F1-score: {}\n".format(F1_score))
-		print("Confusion Matrix: {}\n".format(confusion_matrix_))
+		print("Confusion Matrix:\n {}\n".format(confusion_matrix_))
 		return precision, recall, F1_score, confusion_matrix_
 
 
